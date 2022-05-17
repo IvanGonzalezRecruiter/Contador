@@ -1,11 +1,8 @@
-//import react into the bundle
 import React from "react";
 import ReactDOM from "react-dom";
 
-//include your index.scss file into the bundle
 import "../styles/index.css";
 
-//import component(s)
 import SecondsCounter from "./component/SecondsCounter.jsx";
 
 let counter = 0;
@@ -20,7 +17,6 @@ setInterval(
 		const secondOne = counter;
 		counter++;
 
-		// Renders SecondsCounter into the DOM
 		ReactDOM.render(
 			<SecondsCounter
 				secondOne={secondOne}
@@ -34,6 +30,6 @@ setInterval(
 			document.querySelector("#app")
 		);
 	},
-	// Evaluates above expression every second
+
 	1000
 );

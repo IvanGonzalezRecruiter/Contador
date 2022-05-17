@@ -5,7 +5,7 @@ const SecondsCounter = (props) => {
 	return (
 		<div className="d-flex justify-content-center align-items-center text-white">
 			<div className="row">
-				<div className="col my-3 mx-2 py-2 text-center bg-info align-self-center">
+				<div className="col my-3 mx-2 py-2 text-center bg-success align-self-center">
 					<i className="far fa-clock fa-3x display-4" />
 				</div>
 				<div className={divStyles}>{props.secondSix % 10}</div>
@@ -28,6 +28,6 @@ SecondsCounter.propTypes = {
 	secondSix: PropTypes.number,
 };
 
-let divStyles = "col my-3 mx-2 py-2 px-4 display-4 text-center bg-info";
+let divStyles = "col my-3 mx-2 py-2 px-4 display-4 text-center bg-success";
 
 export default SecondsCounter;
